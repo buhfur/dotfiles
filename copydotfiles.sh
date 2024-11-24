@@ -5,5 +5,5 @@
 DOTFILES=( ".oh-my-zsh" ".vimrc" ".zshrc" ".zshenv" ".tmux.conf" )
 
 for FILE in ${DOTFILES[@]}; do
-    echo "INFO: cp -rv $HOME/$FILE $HOME/dotfiles"
+    cp -rv $HOME/$FILE $HOME/dotfiles
 done
