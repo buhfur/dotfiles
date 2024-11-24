@@ -78,8 +78,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin() 
-        "Plug 'tpope/vim-surround' " Surrounding ysw)
-        Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
+        Plug 'https://github.com/ap/vim-css-color' 
         Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
         Plug 'honza/vim-snippets'
         Plug 'tmsvg/pear-tree'
@@ -88,12 +87,15 @@ call plug#begin()
         Plug 'xolox/vim-colorscheme-switcher'
         Plug 'xolox/vim-misc'
         Plug 'francoiscabrol/ranger.vim'
+        " auto-closing paired chars 
+        Plug 'ZhiyuanLck/smart-pairs'
 
 call plug#end()
 
-" map jj to exit insert mode 
 inoremap jj <ESC>
-"much better default behavior for editing line above cursor 
-noremap {<CR> {<CR>}<C-o>O
+
+
+" TODO: uncomment this line if completion plugins are not working  
+"noremap {<CR> {<CR>}<C-o>O
 
 
