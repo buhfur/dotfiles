@@ -3,7 +3,6 @@ alias i3conf='vim ~/.config/i3/config'
 alias polyconf='ranger ~/.config/polybar/'
 alias piconf='vim ~/.config/picom/picom.conf'
 alias ri3='i3-msg reload ; i3-msg restart'
-alias logoff='sudo pkill -u sky'
 alias twow='wine $HOME/turtle/VanillaFixes.exe'
 alias zconf='vim ~/.zshrc'
 alias sozsh='source ~/.zshrc'
@@ -24,7 +23,6 @@ alias mcbackups='ls /mnt/backups/backups/minecraft-backups && du -sh /mnt/backup
 alias caps='xmodmap ~/.Xmodmap'
 alias backups='cd /mnt/backups/backups/'
 alias ls='ls -l -h'
-
 
 export todo='$HOME/todo/'
 export backups='/mnt/backups/backups/'
