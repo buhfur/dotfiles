@@ -15,7 +15,7 @@ for DOTFILE in "$DOTFILE_DIR"/.*; do
         if [ -d $HOME/.oh-my-zsh ]; then # Check for existing oh-my-zsh config 
             cp -vr $HOME/.oh-my-zsh $DOTFILE_BACKUP_DIR
             echo "INFO: all ohmyzsh files to $DOTFILE_BACKUP_DIR successfully"
-            rm -r $HOME/.oh-my-zsh # Removes existing directory 
+            rm -rf $HOME/.oh-my-zsh # Removes existing directory 
             echo "INFO: Creating symbolic link to ohmyzsh config..."
             sudo ln -svf -t $HOME $DOTFILE_ABS_PATH # Create symlink to oh-my-zsh config in repo  
             echo "INFO: ohmyzsh links created successfully "

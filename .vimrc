@@ -12,7 +12,7 @@ set smartindent
 set smarttab
 set expandtab
 set autoread
-
+" Explicitly enable true colors 
 " change color of tab line and tab area 
 :hi TabLineFill ctermfg=Black ctermbg=Black
 :hi TabLine ctermfg=Yellow ctermbg=Black
@@ -88,12 +88,35 @@ call plug#begin()
         Plug 'xolox/vim-colorscheme-switcher'
         Plug 'xolox/vim-misc'
         Plug 'francoiscabrol/ranger.vim'
+        Plug 'airblade/vim-gitgutter'
+        Plug 'tpope/vim-fugitive'
+        Plug 'vim-airline/vim-airline'
+        Plug 'vim-airline/vim-airline-themes'
+        Plug 'morhetz/gruvbox'
+
 
 call plug#end()
+
+" Gruvbox config colorscheme config  
+set background=dark
+colorscheme gruvbox
+set termguicolors
+
+
 
 " map jj to exit insert mode 
 inoremap jj <ESC>
 "much better default behavior for editing line above cursor 
 noremap {<CR> {<CR>}<C-o>O
+
+" Improved git 
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#hunks#enabled = 1 
+let g:airline_powerline_fonts = 1
+" Git gutter color configs for gruvbox dark colorscheme 
+highlight GitGutterAdd guifg=#b8bb26 guibg=NONE
+highlight GitGutterChange guifg=#fabd2f guibg=NONE
+highlight GitGutterDelete guifg=#fb4934 guibg=NONE
+
 
 
