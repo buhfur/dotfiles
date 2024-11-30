@@ -20,7 +20,7 @@ if ! [[ -a $HOME/.oh-my-zsh/oh-my-zsh.sh ]]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/dotfiles/.oh-my-zsh
 # Zsh theme 
 #ZSH_THEME="mira"
 # Plugin list
