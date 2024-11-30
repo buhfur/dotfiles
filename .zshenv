@@ -22,7 +22,7 @@ alias sys='sudo systemctl'
 alias mcbackups='ls /mnt/backups/backups/minecraft-backups && du -sh /mnt/backups/backups/minecraft-backups'
 alias caps='xmodmap ~/.Xmodmap'
 alias backups='cd /mnt/backups/backups/'
-alias ls='ls -l -h'
+alias ls='ls -a -l -h'
 
 export todo='$HOME/todo/'
 export backups='/mnt/backups/backups/'
