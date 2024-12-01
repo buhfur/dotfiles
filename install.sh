@@ -2,6 +2,7 @@
 
 # simple script which creates symlinks from the dotfiles contained in the repo to the users home directory 
 
+# TODO : fix errors with installing 
 DOTFILE_DIR="${1:-.}" # defaults to current working directory 
 EXCLUDED_FILES=(".gitignore" ".install.sh.swp") # Files which shoulden't be copied / made symbolic links to 
 

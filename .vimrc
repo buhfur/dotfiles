@@ -88,7 +88,6 @@ call plug#begin()
         Plug 'xolox/vim-colorscheme-switcher'
         Plug 'xolox/vim-misc'
         Plug 'francoiscabrol/ranger.vim'
-        Plug 'airblade/vim-gitgutter'
         Plug 'tpope/vim-fugitive'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
@@ -100,7 +99,7 @@ call plug#end()
 " Gruvbox config colorscheme config  
 set background=dark
 colorscheme gruvbox
-set termguicolors
+"set termguicolors
 
 
 
@@ -118,5 +117,6 @@ highlight GitGutterAdd guifg=#b8bb26 guibg=NONE
 highlight GitGutterChange guifg=#fabd2f guibg=NONE
 highlight GitGutterDelete guifg=#fb4934 guibg=NONE
 
-
+let g:airline_theme='gruvbox'
+let g:airline_gruvbox_bg='dark'
 
