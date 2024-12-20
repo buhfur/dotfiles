@@ -19,7 +19,6 @@ if ! [[ -a $HOME/.oh-my-zsh/oh-my-zsh.sh ]]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
 # Zsh theme 
 ZSH_THEME="juanghurtado"
 # Plugin list
@@ -38,13 +37,6 @@ zinit light junegunn/fzf
 zinit light rupa/z
 # Fpath config for completions 
 source $ZSH/oh-my-zsh.sh
-export EDITOR=/usr/bin/vim
-export PATH=$PATH:$HOME/.config/rofi/scripts/
-export FZF_BASE=/usr/bin/fzf
-
-# Removes annoying highlighting from ls 
-export LS_COLORS="di=34:ln=36:so=32:pi=33:ex=31:bd=33;01:cd=33;01:su=37;41:sg=30;43:tw=30;42:ow=00"
-
 # Uncomment this if the autocompletions starts acting up 
 #setopt NO_CORRECT
 bindkey '^I' autosuggest-accept
